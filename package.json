@@ -3,7 +3,12 @@
   "version": "2.0.0",
   "scripts": {
     "postinstall": "bower install && grunt build",
-    "test": "grunt test"
+    "test": "grunt karma:unit",
+    "start": "grunt startlocal",
+    "sass":"grunt sass",
+    "concat": "grunt concat",
+    "uglify": "grunt uglify",
+    "cssmin": "grunt cssmin"
   },
   "description": "continuous deployment of simple javascript application",
   "author": "Eirik Bell",
