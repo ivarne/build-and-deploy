@@ -1,3 +1,10 @@
 dependencies:
  override:
    - npm install
+post:
+  - npm run build
+  deployment:
+    staging:
+      branch: master
+      heroku:
+        appname: ivar-test-build-tools
